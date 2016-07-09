@@ -1,14 +1,15 @@
 ﻿namespace AcademyNinja.GameObjects
 {
-    using Contracts;
     using System;
+    using Contracts;
 
     internal class Unit : GameObject, IUnit
     {
         private const int MinimumHealth = 1;
 
-        public Unit(IBound bounds) : base(bounds)
+        public Unit(IBound bounds, int health) : base(bounds)
         {
+            this.Health = health;
         }
 
         public int Health { get; set; }

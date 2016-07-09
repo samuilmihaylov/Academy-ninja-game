@@ -2,6 +2,5 @@
 {
     internal interface IGameObject : IBoundable
     {
-
     }
 }

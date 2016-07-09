@@ -5,7 +5,7 @@
 
     internal class Course : Unit, ICourse
     {
-        public Course(IBound bounds) : base(bounds)
+        public Course(IBound bounds, int health) : base(bounds, health)
         {
         }
 

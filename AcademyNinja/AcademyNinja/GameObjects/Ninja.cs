@@ -5,7 +5,7 @@
 
     internal class Ninja : Unit, INinja
     {
-        public Ninja(IBound bounds) : base(bounds)
+        public Ninja(IBound bounds, int health) : base(bounds, health)
         {
         }
 
