@@ -24,12 +24,12 @@
         public void StartGame()
         {
             // Attache methods for key informattion.
-            commandProvider.KeyPressed += PerformMove;
+            this.commandProvider.KeyPressed += this.PerformMove;
         }
 
         private void PerformMove(object sender, KeyPressEventArgs args)
         {
-
+            throw new NotImplementedException();
         }
     }
 }

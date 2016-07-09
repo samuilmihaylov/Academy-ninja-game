@@ -52,11 +52,10 @@
     <Compile Include="Engine\Contracts\IGameContext.cs" />
     <Compile Include="UI\IGameRenderer.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="GameObjects\Contracts\IBound.cs" />
-    <Compile Include="GameObjects\Contracts\IBoundable.cs" />
+    <Compile Include="IBound.cs" />
+    <Compile Include="IBoundable.cs" />
     <Compile Include="GameObjects\Contracts\ICourse.cs" />
     <Compile Include="GameObjects\Contracts\IGameObject.cs" />
-    <Compile Include="GameObjects\Contracts\IMovable.cs" />
     <Compile Include="GameObjects\Contracts\IUnit.cs" />
     <Compile Include="GameObjects\Course.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
@@ -67,6 +66,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AcademyNinjaClassDiagram.cd" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />

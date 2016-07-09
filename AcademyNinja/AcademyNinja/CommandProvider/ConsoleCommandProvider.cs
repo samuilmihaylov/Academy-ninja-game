@@ -13,8 +13,7 @@
         public void ListenForKeyPress()
         {
             if (Console.KeyAvailable)
-            {
-                //this.OnKeyPressed(null);
+            {                
             }
         }
 

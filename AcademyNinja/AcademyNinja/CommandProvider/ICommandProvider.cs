@@ -4,8 +4,8 @@
 
     internal interface ICommandProvider
     {
-        void ListenForKeyPress();
-
         event KeyPressedEventHandler KeyPressed;
+
+        void ListenForKeyPress();
     }
 }
