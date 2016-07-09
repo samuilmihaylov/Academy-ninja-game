@@ -43,12 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CoursesType.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="GameObjects\Contracts\IBound.cs" />
     <Compile Include="GameObjects\Contracts\IBoundable.cs" />
+    <Compile Include="GameObjects\Contracts\ICourse.cs" />
     <Compile Include="GameObjects\Contracts\IGameObject.cs" />
     <Compile Include="GameObjects\Contracts\IMovable.cs" />
     <Compile Include="GameObjects\Contracts\IUnit.cs" />
+    <Compile Include="GameObjects\Course.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\INinja.cs" />
     <Compile Include="GameObjects\Ninja.cs" />
@@ -60,7 +63,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\" />
     <Folder Include="GameEngine\" />
     <Folder Include="UI\" />
   </ItemGroup>
