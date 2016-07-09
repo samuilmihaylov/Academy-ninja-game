@@ -1,2 +1,3 @@
 c:\users\stoyan\documents\visual studio 2015\Projects\AcademyNinja\AcademyNinja\bin\Debug\AcademyNinja.exe.config
 D:\Development\Telerik Academy 2016-2017\Academy-ninja-game\AcademyNinja\AcademyNinja\bin\Debug\AcademyNinja.exe.config
+C:\Users\samui\Documents\GitHub\Academy-ninja-game\AcademyNinja\AcademyNinja\bin\Debug\AcademyNinja.exe.config

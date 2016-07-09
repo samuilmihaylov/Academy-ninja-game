@@ -44,6 +44,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntryPoint.cs" />
+    <Compile Include="GameObjects\Contracts\IBound.cs" />
+    <Compile Include="GameObjects\Contracts\IBoundable.cs" />
+    <Compile Include="GameObjects\Contracts\IGameObject.cs" />
+    <Compile Include="GameObjects\Contracts\IMovable.cs" />
+    <Compile Include="GameObjects\Contracts\IUnit.cs" />
+    <Compile Include="GameObjects\GameObject.cs" />
+    <Compile Include="GameObjects\INinja.cs" />
+    <Compile Include="GameObjects\Ninja.cs" />
+    <Compile Include="GameObjects\Unit.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +62,6 @@
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="GameEngine\" />
-    <Folder Include="GameObjects\" />
     <Folder Include="UI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
