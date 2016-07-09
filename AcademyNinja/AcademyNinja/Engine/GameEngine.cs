@@ -2,10 +2,19 @@
 {
     using System;
 
+    using CommandProvider;
+    using Common;
+
     internal class GameEngine : IGameEngine
     {
-        private IGameRenderer gameRenderer;
+        private IGameRenderer renderer;
         private ICommandProvider commandProvider;
+
+        public GameEngine(IGameRenderer gameRenderer, ICommandProvider commandProvider)
+        {
+            this.renderer = gameRenderer;
+            this.commandProvider = commandProvider;
+        }
 
         public void InitializeGame()
         {
@@ -14,7 +23,13 @@
 
         public void StartGame()
         {
-            throw new NotImplementedException();
+            // Attache methods for key informattion.
+            commandProvider.KeyPressed += PerformMove;
+        }
+
+        private void PerformMove(object sender, KeyPressEventArgs args)
+        {
+
         }
     }
 }
