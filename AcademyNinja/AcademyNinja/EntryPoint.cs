@@ -1,4 +1,6 @@
-﻿namespace AcademyNinja
+﻿using AcademyNinja.GameObjects;
+
+namespace AcademyNinja
 {
     internal class EntryPoint
     {

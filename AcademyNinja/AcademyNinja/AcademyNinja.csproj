@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\CoursesType.cs" />
+    <Compile Include="Engine\GameEngine.cs" />
+    <Compile Include="Engine\ICommandProvider.cs" />
+    <Compile Include="Engine\IGameEngine.cs" />
+    <Compile Include="Engine\IGameContext.cs" />
+    <Compile Include="InputProvider\IProvider.cs" />
+    <Compile Include="UI\IGameRenderer.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="GameObjects\Contracts\IBound.cs" />
     <Compile Include="GameObjects\Contracts\IBoundable.cs" />
@@ -53,7 +59,7 @@
     <Compile Include="GameObjects\Contracts\IUnit.cs" />
     <Compile Include="GameObjects\Course.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
-    <Compile Include="GameObjects\INinja.cs" />
+    <Compile Include="GameObjects\Contracts\INinja.cs" />
     <Compile Include="GameObjects\Ninja.cs" />
     <Compile Include="GameObjects\Unit.cs" />
     <Compile Include="Position.cs" />
@@ -62,10 +68,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GameEngine\" />
-    <Folder Include="UI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

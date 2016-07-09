@@ -1,14 +1,14 @@
 ﻿namespace AcademyNinja.GameObjects
 {
-    using System;
     using Contracts;
 
     internal class Course : Unit, ICourse
     {
-        public Course(IBound bounds, int health) : base(bounds, health)
+        public Course(IBound bounds, int health, int points) : base(bounds, health)
         {
+            this.Points = points;
         }
 
-        public int Points { get; set; }
+        public int Points { get; }
     }
 }
