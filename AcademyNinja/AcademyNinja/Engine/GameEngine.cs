@@ -1,9 +1,9 @@
 ﻿namespace AcademyNinja.Engine
 {
     using System;
-
     using CommandProvider;
     using Common;
+    using UI;
 
     internal class GameEngine : IGameEngine
     {

@@ -1,9 +1,9 @@
 ﻿namespace AcademyNinja.UI
 {
-    using AcademyNinja.Engine.Contracts;
-    using GameObjects.Contracts;
     using System;
     using System.Collections.Generic;
+    using AcademyNinja.Engine.Contracts;
+    using GameObjects.Contracts;
 
     internal class ConsoleRenderer : IGameRenderer
     {

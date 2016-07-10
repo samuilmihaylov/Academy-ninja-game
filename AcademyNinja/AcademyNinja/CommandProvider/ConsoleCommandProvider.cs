@@ -14,7 +14,6 @@
         {
             if (Console.KeyAvailable)
             {
-
             }
         }
 
