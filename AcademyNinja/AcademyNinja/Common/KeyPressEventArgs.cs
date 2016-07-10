@@ -4,6 +4,6 @@
 
     internal class KeyPressEventArgs : EventArgs
     {
-        // TODO: Implement !!!!!!
+        public KeyType KeyType { get; set; }
     }
 }

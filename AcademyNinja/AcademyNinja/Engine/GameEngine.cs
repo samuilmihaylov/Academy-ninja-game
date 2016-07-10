@@ -1,8 +1,8 @@
 ﻿namespace AcademyNinja.Engine
 {
     using System;
+
     using CommandProvider;
-    using Common;
     using UI;
 
     internal class GameEngine : IGameEngine
@@ -18,18 +18,12 @@
 
         public void InitializeGame()
         {
-            throw new NotImplementedException();
+            throw new NotImplementedException("InitializeGame");
         }
 
         public void StartGame()
         {
-            //// Attache methods for key informattion.
-            //// this.commandProvider.KeyPressed += this.PerformMove;
+            throw new NotImplementedException("StartGame");
         }
-
-        //// private void PerformMove(object sender, KeyPressEventArgs args)
-        //// {
-        ////    throw new NotImplementedException();
-        //// }
     }
 }

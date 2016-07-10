@@ -14,6 +14,23 @@
         {
             if (Console.KeyAvailable)
             {
+                ConsoleKey key = Console.ReadKey().Key;
+                var keyArgs = new KeyPressEventArgs();
+                if (key == ConsoleKey.LeftArrow)
+                {
+                    keyArgs.KeyType = KeyType.Left;
+                    this.OnKeyPressed(keyArgs);
+                }
+                else if (key == ConsoleKey.RightArrow)
+                {
+                    keyArgs.KeyType = KeyType.Rigth;
+                    this.OnKeyPressed(keyArgs);
+                }
+                else if (key == ConsoleKey.Spacebar)
+                {
+                    keyArgs.KeyType = KeyType.Space;
+                    this.OnKeyPressed(keyArgs);
+                }
             }
         }
 
