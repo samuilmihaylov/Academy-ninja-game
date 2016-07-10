@@ -4,6 +4,8 @@
 
     internal interface ISpecialCourse : ICourse
     {
-        IList<ISkill> Skills { get; set; }
+        ICollection<IGift> Gifts { get; set; }
+
+        void AddSpecialGift(ICollection<IGift> gifts, IGift gift);
     }
 }

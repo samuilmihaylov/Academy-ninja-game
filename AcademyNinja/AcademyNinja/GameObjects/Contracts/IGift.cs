@@ -2,8 +2,8 @@
 {
     using AcademyNinja.GameObjects.Contracts;
 
-    internal interface INinja : IUnit
+    internal interface IGift
     {
-        int Lives { get; set; }
+        void Apply(INinja ninja);
     }
 }

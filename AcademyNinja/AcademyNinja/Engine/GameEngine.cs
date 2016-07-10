@@ -23,13 +23,13 @@
 
         public void StartGame()
         {
-            // Attache methods for key informattion.
-            //this.commandProvider.KeyPressed += this.PerformMove;
+            //// Attache methods for key informattion.
+            //// this.commandProvider.KeyPressed += this.PerformMove;
         }
 
-        //private void PerformMove(object sender, KeyPressEventArgs args)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        //// private void PerformMove(object sender, KeyPressEventArgs args)
+        //// {
+        ////    throw new NotImplementedException();
+        //// }
     }
 }

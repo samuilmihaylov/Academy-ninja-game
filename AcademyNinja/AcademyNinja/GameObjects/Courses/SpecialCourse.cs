@@ -6,21 +6,16 @@
 
     internal class SpecialCourse : Course, ISpecialCourse
     {
-        public SpecialCourse(IBound bounds, int health, int bonusPoints) : base(bounds, health, bonusPoints)
+        public SpecialCourse(IBound bounds, int health, int bonusPoints) 
+            : base(bounds, health, bonusPoints)
         {
         }
 
-        public IList<ISkill> Skills
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
+        public ICollection<IGift> Gifts { get; set; }
 
-            set
-            {
-                throw new NotImplementedException();
-            }
+        public void AddSpecialGift(ICollection<IGift> giftsCollection, IGift gift)
+        {
+            giftsCollection.Add(gift);
         }
     }
 }

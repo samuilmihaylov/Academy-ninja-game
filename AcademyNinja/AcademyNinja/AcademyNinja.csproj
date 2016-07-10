@@ -56,9 +56,11 @@
     <Compile Include="GameObjects\Courses\CSharpCourse.cs" />
     <Compile Include="GameObjects\Courses\CSSCourse.cs" />
     <Compile Include="GameObjects\Courses\HtmlCourse.cs" />
-    <Compile Include="GameObjects\Contracts\ISkill.cs" />
+    <Compile Include="GameObjects\Contracts\IGift.cs" />
     <Compile Include="GameObjects\Courses\JavaScriptCourse.cs" />
     <Compile Include="GameObjects\Courses\SpecialCourse.cs" />
+    <Compile Include="GameObjects\Gift.cs" />
+    <Compile Include="GameObjects\Gifts\BonusLifeGift.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="UI\ConsoleRenderer.cs" />
     <Compile Include="UI\IGameRenderer.cs" />
