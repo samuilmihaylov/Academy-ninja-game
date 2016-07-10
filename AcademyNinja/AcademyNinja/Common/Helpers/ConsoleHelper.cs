@@ -1,37 +1,75 @@
 ﻿namespace AcademyNinja.Common.ConsoleHelpers
 {
     using System;
-
+    using GameObjects.Courses;
+    using GameObjects;
     internal static class ConsoleHelper
     {
         public static string[][] GetFigureMatrix(Type figureType)
         {
             throw new NotImplementedException("GetFigureMatrix");
 
-            //if (figureType == typeof(CSharpCourse))
-            //{
+            if (figureType == typeof(CSharpCourse))
+            {
 
-            //}
-            //else if (figureType == typeof(CSSCourse))
-            //{
+                string[][] csharp = {
+                new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", " ", "#"},
+                new[] { "|", " ", " "," ", " ", "\\", " "," ","#", "#", "#" },
+                new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", " ", "#"}
+            };
 
-            //}
-            //else if (figureType == typeof(HtmlCourse))
-            //{
+                return csharp;
+            }
+            else if (figureType == typeof(CSSCourse))
+            {
+                string[][] css = {
+                new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", "#", "#"},
+                new[] { "|", " ", " "," ", " ", "\\", " "," "," ", "\\", " " },
+                new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", "#", "#"}
+            };
 
-            //}
-            //else if (figureType == typeof(JavaScriptCourse))
-            //{
+                return css;
+            }
+            else if (figureType == typeof(HtmlCourse))
+            {
+                string[][] html = {
+                new[] { "#", " ", "#"," ", "#", "#", "#"," ", "#", "  ", "#" },
+                new[] { "#", "#", "#"," ", " ", "#", " "," ", "#", "\\/", "#" },
+                new[] { "#", " ", "#"," ", " ", "#", " ", " ", "#", " ", " #" }
+            };
 
-            //}
-            //else if (figureType == typeof(SpecialCourse))
-            //{
+                return html;
+            }
+            else if (figureType == typeof(JavaScriptCourse))
+            {
+                string[][] js = {
+                new[] { "#", "#", "#"," ", "#", "#", "#"," ",  "#", "#", "#",},
+                new[] { " ", " ", "#"," ", " ", "\\", " "," ", "|", " ", " ",},
+                new[] { " ", "#", "#", " ", "#", "#", "#", " ","#", "#", "#",}
+            };
 
-            //}
-            //else if (figureType == typeof(Ninja))
-            //{
+                return js;
+            }
+            else if (figureType == typeof(SpecialCourse))
+            {
+                string[][] oop = {
+                new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", "#", "#",},
+                new[] { "#", " ", "#"," ", "#", " ", "#"," ", "#", "#", "#",},
+                new[] { "#", "#", "#"," ", "#", "#", "#", " ","#", " ", " ",}
+            };
 
-            //}
+                return oop;
+            }
+            else if (figureType == typeof(Ninja))
+            {
+                string[][] ninja = {
+                new[] {" 0"},
+                new[] {"/|\\/"},
+                new[] {"/ \\"}
+            };
+
+                return ninja;
+            }
         }
     }
 }
