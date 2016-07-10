@@ -1,4 +1,4 @@
-﻿namespace AcademyNinja.UI
+﻿namespace AcademyNinja.Contracts
 {
     using AcademyNinja.Engine.Contracts;
 

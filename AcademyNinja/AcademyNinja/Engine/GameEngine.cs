@@ -1,11 +1,9 @@
 ﻿namespace AcademyNinja.Engine
 {
-    using CommandProvider;
-    using Factories;
-    using GameObjects;
-    using GameObjects.Contracts;
-    using UI;
-    using Contracts;
+    using AcademyNinja.Contracts;
+    using AcademyNinja.Engine.Contracts;
+    using AcademyNinja.Factories;
+    using AcademyNinja.GameObjects;
 
     internal class GameEngine : IGameEngine
     {

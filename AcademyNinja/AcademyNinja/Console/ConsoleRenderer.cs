@@ -5,6 +5,7 @@
 
     using AcademyNinja.Engine.Contracts;
     using Common.ConsoleHelpers;
+    using Contracts;
 
     internal class ConsoleRenderer : IGameRenderer
     {
@@ -30,7 +31,7 @@
         private void DrawSingleUnit(IBoundable unit)
         {
             Type unitType = unit.GetType();
-            string[][] unitRepresentation = ConsoleHelper.GetFigureMatrix(unitType);
+            string[][] unitRepresentation = ConsoleHelper.GetFigureDrawing(unitType);
             foreach (var row in unitRepresentation)
             {
                 foreach (var symbol in row)

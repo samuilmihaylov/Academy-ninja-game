@@ -1,10 +1,9 @@
-﻿namespace AcademyNinja.CommandProvider
+﻿namespace AcademyNinja.Console
 {
     using System;
 
     using Common;
-
-    internal delegate void KeyPressedEventHandler(object sender, KeyPressEventArgs args);
+    using Contracts;
 
     internal class ConsoleCommandProvider : ICommandProvider
     {

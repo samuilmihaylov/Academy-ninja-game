@@ -1,4 +1,4 @@
-﻿namespace AcademyNinja.CommandProvider
+﻿namespace AcademyNinja.Contracts
 {
     using AcademyNinja.Common;
 

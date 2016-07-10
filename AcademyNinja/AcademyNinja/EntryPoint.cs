@@ -1,8 +1,8 @@
 ﻿namespace AcademyNinja
 {
-    using CommandProvider;
-    using Engine;
-    using UI;
+    using AcademyNinja.Engine;
+    using AcademyNinja.UI;
+    using Console;
 
     internal class EntryPoint
     {
