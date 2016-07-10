@@ -4,8 +4,8 @@
 
     internal interface ISpecialCourse : ICourse
     {
-        ICollection<IGift> Gifts { get; set; }
+        void AddGift(IGift gift);
 
-        void AddSpecialGift(ICollection<IGift> gifts, IGift gift);
+        void AddGifts(IEnumerable<IGift> gifts);
     }
 }

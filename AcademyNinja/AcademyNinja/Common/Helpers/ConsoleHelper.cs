@@ -1,75 +1,69 @@
 ﻿namespace AcademyNinja.Common.ConsoleHelpers
 {
     using System;
-    using GameObjects.Courses;
+
     using GameObjects;
+    using GameObjects.Courses;
+
     internal static class ConsoleHelper
     {
-        public static string[][] GetFigureMatrix(Type figureType)
+        public static string[][] GetFigureDrawing(Type figureType)
         {
-            throw new NotImplementedException("GetFigureMatrix");
-
+            string[][] figureDrawing = null;
             if (figureType == typeof(CSharpCourse))
             {
-
-                string[][] csharp = {
-                new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", " ", "#"},
-                new[] { "|", " ", " "," ", " ", "\\", " "," ","#", "#", "#" },
-                new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", " ", "#"}
-            };
-
-                return csharp;
+                figureDrawing = new[]{
+                    new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", " ", "#" },
+                    new[] { "|", " ", " "," ", " ", "\\", " "," ","#", "#", "#" },
+                    new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", " ", "#" }
+                };
             }
-            else if (figureType == typeof(CSSCourse))
+            else if (figureType == typeof(CssCourse))
             {
-                string[][] css = {
-                new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", "#", "#"},
-                new[] { "|", " ", " "," ", " ", "\\", " "," "," ", "\\", " " },
-                new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", "#", "#"}
-            };
-
-                return css;
+                figureDrawing = new[]{
+                    new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", "#", "#" },
+                    new[] { "|", " ", " "," ", " ", "\\", " "," "," ", "\\", " " },
+                    new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", "#", "#" }
+                };
             }
             else if (figureType == typeof(HtmlCourse))
             {
-                string[][] html = {
-                new[] { "#", " ", "#"," ", "#", "#", "#"," ", "#", "  ", "#" },
-                new[] { "#", "#", "#"," ", " ", "#", " "," ", "#", "\\/", "#" },
-                new[] { "#", " ", "#"," ", " ", "#", " ", " ", "#", " ", " #" }
-            };
-
-                return html;
+                figureDrawing = new[]{
+                    new[] { "#", " ", "#", " ", "#", "#", "#", " ", "#", "  ", "#" },
+                    new[] { "#", "#", "#", " ", " ", "#", " ", " ", "#", "\\/", "#" },
+                    new[] { "#", " ", "#", " ", " ", "#", " ", " ", "#", " ", " #" }
+                };
             }
             else if (figureType == typeof(JavaScriptCourse))
             {
-                string[][] js = {
-                new[] { "#", "#", "#"," ", "#", "#", "#"," ",  "#", "#", "#",},
-                new[] { " ", " ", "#"," ", " ", "\\", " "," ", "|", " ", " ",},
-                new[] { " ", "#", "#", " ", "#", "#", "#", " ","#", "#", "#",}
-            };
-
-                return js;
+                figureDrawing = new[] {
+                    new[] { "#", "#", "#", " ", "#", "#", "#", " ", "#", "#", "#" },
+                    new[] { " ", " ", "#", " ", " ", "\\", " ", " ", "|", " ", " " },
+                    new[] { " ", "#", "#", " ", "#", "#", "#", " ", "#", "#", "#" }
+                };
             }
             else if (figureType == typeof(SpecialCourse))
             {
-                string[][] oop = {
-                new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", "#", "#",},
-                new[] { "#", " ", "#"," ", "#", " ", "#"," ", "#", "#", "#",},
-                new[] { "#", "#", "#"," ", "#", "#", "#", " ","#", " ", " ",}
-            };
-
-                return oop;
+                figureDrawing = new[]{
+                    new[] { "#", "#", "#", " ", "#", "#", "#", " ", "#", "#", "#" },
+                    new[] { "#", " ", "#", " ", "#", " ", "#", " ", "#", "#", "#" },
+                    new[] { "#", "#", "#", " ", "#", "#", "#", " ", "#", " ", " " }
+                };
             }
             else if (figureType == typeof(Ninja))
             {
-                string[][] ninja = {
-                new[] {" 0"},
-                new[] {"/|\\/"},
-                new[] {"/ \\"}
-            };
-
-                return ninja;
+                figureDrawing = new[]{
+                    new[] { " 0" },
+                    new[] { "/|\\/" },
+                    new[] { "/ \\" }
+                };
             }
+            else
+            {
+                throw new ArgumentException("figureType");
+            }
+
+            return figureDrawing;
         }
     }
 }

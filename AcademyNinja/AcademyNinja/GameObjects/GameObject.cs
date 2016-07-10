@@ -2,7 +2,7 @@
 {
     using AcademyNinja.GameObjects.Contracts;
 
-    internal class GameObject : IGameObject
+    internal class GameObject : IGameObject, IBoundable
     {
         public GameObject(IBound bounds)
         {

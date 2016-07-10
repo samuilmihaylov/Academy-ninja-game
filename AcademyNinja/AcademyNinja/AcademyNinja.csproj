@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Constants.cs" />
     <Compile Include="Common\Helpers\ConsoleHelper.cs" />
     <Compile Include="Common\CourseType.cs" />
     <Compile Include="Common\KeyPressEventArgs.cs" />
@@ -57,7 +58,7 @@
     <Compile Include="Factories\ICourseFactory.cs" />
     <Compile Include="GameObjects\Contracts\ISpecialCourse.cs" />
     <Compile Include="GameObjects\Courses\CSharpCourse.cs" />
-    <Compile Include="GameObjects\Courses\CSSCourse.cs" />
+    <Compile Include="GameObjects\Courses\CssCourse.cs" />
     <Compile Include="GameObjects\Courses\HtmlCourse.cs" />
     <Compile Include="GameObjects\Contracts\IGift.cs" />
     <Compile Include="GameObjects\Courses\JavaScriptCourse.cs" />

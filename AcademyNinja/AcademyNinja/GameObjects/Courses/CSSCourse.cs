@@ -1,15 +1,17 @@
 ﻿namespace AcademyNinja.GameObjects.Courses
 {
-    internal class CSSCourse : Course
+    using AcademyNinja.GameObjects.Contracts;
+
+    internal class CssCourse : Course, ICourse
     {
         private const int DefaultHealthPoints = 30;
         private const int DefaultBonusPoints = 20;
 
-        public CSSCourse(IBound bounds) : base(bounds, DefaultHealthPoints, DefaultBonusPoints)
+        public CssCourse(IBound bounds) : this(bounds, DefaultHealthPoints, DefaultBonusPoints)
         {
         }
 
-        public CSSCourse() : base(DefaultHealthPoints, DefaultBonusPoints)
+        public CssCourse(IBound bounds, int health, int bonusPoints) : base(bounds, DefaultHealthPoints, DefaultBonusPoints)
         {
         }
     }

@@ -12,16 +12,17 @@
 
         public ICourse CreateCourse(CourseType type)
         {
+            var bounds = new Rectangle(Constants.CourseDrawingWidth, Constants.CourseDrawingHeigth);
             switch (type)
             {
                 case CourseType.HTML:
-                    return new HtmlCourse();
+                    return new HtmlCourse(bounds);
                 case CourseType.CSharp:
-                    return new CSharpCourse();
+                    return new CSharpCourse(bounds);
                 case CourseType.CSS:
-                    return new CSSCourse();
+                    return new CssCourse(bounds);
                 case CourseType.JavaScript:
-                    return new JavaScriptCourse();
+                    return new JavaScriptCourse(bounds);
                 default:
                     throw new ArgumentException(string.Format(InvalidCourseErrorMesssage, type));
             }

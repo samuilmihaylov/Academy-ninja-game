@@ -8,8 +8,9 @@
             this.Height = heigth;
         }
 
-        public Rectangle(int width, int heigth, Position position)
+        public Rectangle(int width, int heigth, Position position) : this(width, heigth)
         {
+            this.Position = position;
         }
 
         public int Height { get; private set; }

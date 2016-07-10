@@ -18,7 +18,7 @@
   <Class Name="AcademyNinja.Engine.GameEngine" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="19.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAAIAAAAAgAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAABAAAAAgAAQAQAAAAQIAAAAAgAA=</HashCode>
       <FileName>Engine\GameEngine.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -42,7 +42,7 @@
   <Class Name="AcademyNinja.GameObjects.Ninja" Collapsed="true">
     <Position X="9.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQAAAAQAAAAAAAAAAAAAAAAAAAAAgAACAAAAgAAAAAA=</HashCode>
+      <HashCode>AQAAAAQAAAAAAAAAAAAAAAAAAAAAAAACAAAAgAAAAAA=</HashCode>
       <FileName>GameObjects\Ninja.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -69,13 +69,16 @@
       <HashCode>AAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Courses\CSharpCourse.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="AcademyNinja.GameObjects.Courses.CSSCourse" Collapsed="true">
+  <Class Name="AcademyNinja.GameObjects.Courses.CssCourse" Collapsed="true">
     <Position X="14.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>GameObjects\Courses\CSSCourse.cs</FileName>
+      <FileName>GameObjects\Courses\CssCourse.cs</FileName>
+      <NewMemberFileName>GameObjects\Courses\CSSCourse.cs</NewMemberFileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademyNinja.GameObjects.Courses.HtmlCourse" Collapsed="true">
     <Position X="16.75" Y="4.75" Width="1.5" />
@@ -83,6 +86,7 @@
       <HashCode>AAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Courses\HtmlCourse.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademyNinja.GameObjects.Courses.JavaScriptCourse" Collapsed="true">
     <Position X="7.75" Y="4.75" Width="1.5" />
@@ -90,6 +94,7 @@
       <HashCode>AAAEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Courses\JavaScriptCourse.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="AcademyNinja.GameObjects.Courses.SpecialCourse" Collapsed="true">
     <Position X="10" Y="4.75" Width="1.5" />
@@ -131,7 +136,7 @@
   <Interface Name="AcademyNinja.Engine.Contracts.IGameContext" Collapsed="true">
     <Position X="19.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAARAAAAA=</HashCode>
       <FileName>Engine\Contracts\IGameContext.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -145,7 +150,7 @@
   <Interface Name="AcademyNinja.UI.IGameRenderer" Collapsed="true">
     <Position X="22.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>UI\IGameRenderer.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -157,35 +162,35 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademyNinja.GameObjects.Contracts.ICourse" Collapsed="true">
-    <Position X="13.25" Y="10" Width="1.5" />
+    <Position X="13.25" Y="10.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Contracts\ICourse.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademyNinja.GameObjects.Contracts.IGameObject" Collapsed="true">
-    <Position X="12.25" Y="7.25" Width="1.5" />
+    <Position X="12.25" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Contracts\IGameObject.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademyNinja.GameObjects.Contracts.ISpecialCourse" Collapsed="true">
-    <Position X="13.25" Y="11.25" Width="1.5" />
+    <Position X="13.25" Y="11.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAIAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Contracts\ISpecialCourse.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademyNinja.GameObjects.Contracts.IUnit" Collapsed="true">
-    <Position X="12.25" Y="8.75" Width="1.5" />
+    <Position X="12.25" Y="9" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Contracts\IUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademyNinja.GameObjects.INinja" Collapsed="true">
-    <Position X="11" Y="10" Width="1.5" />
+    <Position X="11" Y="10.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>GameObjects\Contracts\INinja.cs</FileName>
@@ -199,7 +204,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="AcademyNinja.IBoundable" Collapsed="true">
-    <Position X="12.25" Y="6" Width="1.5" />
+    <Position X="12.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
       <FileName>IBoundable.cs</FileName>
