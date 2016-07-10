@@ -1,11 +1,10 @@
 ﻿namespace AcademyNinja.Common
 {
-    internal enum CoursesType
+    internal enum CourseType
     {
         HTML,
         CSharp,
         CSS,
         JavaScript,
-        DSA
     }
 }

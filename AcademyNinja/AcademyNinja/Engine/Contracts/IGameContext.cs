@@ -1,6 +1,6 @@
-﻿namespace AcademyNinja.Engine
+﻿namespace AcademyNinja.Engine.Contracts
 {
-    public interface IGameContext
+    internal interface IGameContext
     {
     }
 }

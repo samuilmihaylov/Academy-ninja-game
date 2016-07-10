@@ -4,6 +4,6 @@
 
     internal interface INinja : IUnit
     {
-        int Lives { get; set; }
+        int Lives { get; }
     }
 }

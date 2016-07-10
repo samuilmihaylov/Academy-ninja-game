@@ -43,13 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\CoursesType.cs" />
+    <Compile Include="Common\CourseType.cs" />
     <Compile Include="Common\KeyPressEventArgs.cs" />
+    <Compile Include="Engine\Contracts\IGameContext.cs" />
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="CommandProvider\ConsoleCommandProvider.cs" />
     <Compile Include="CommandProvider\ICommandProvider.cs" />
     <Compile Include="Engine\Contracts\IGameEngine.cs" />
-    <Compile Include="Engine\Contracts\IGameContext.cs" />
+    <Compile Include="Factories\CourseFactory.cs" />
+    <Compile Include="Factories\ICourseFactory.cs" />
+    <Compile Include="GameObjects\Contracts\ISpecialCourse.cs" />
+    <Compile Include="GameObjects\Courses\CSharpCourse.cs" />
+    <Compile Include="GameObjects\Courses\CSSCourse.cs" />
+    <Compile Include="GameObjects\Courses\HtmlCourse.cs" />
+    <Compile Include="GameObjects\Contracts\ISkill.cs" />
+    <Compile Include="GameObjects\Courses\JavaScriptCourse.cs" />
+    <Compile Include="GameObjects\Courses\SpecialCourse.cs" />
+    <Compile Include="Rectangle.cs" />
     <Compile Include="UI\IGameRenderer.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="IBound.cs" />
@@ -57,7 +67,7 @@
     <Compile Include="GameObjects\Contracts\ICourse.cs" />
     <Compile Include="GameObjects\Contracts\IGameObject.cs" />
     <Compile Include="GameObjects\Contracts\IUnit.cs" />
-    <Compile Include="GameObjects\Course.cs" />
+    <Compile Include="GameObjects\Courses\Course.cs" />
     <Compile Include="GameObjects\GameObject.cs" />
     <Compile Include="GameObjects\Contracts\INinja.cs" />
     <Compile Include="GameObjects\Ninja.cs" />

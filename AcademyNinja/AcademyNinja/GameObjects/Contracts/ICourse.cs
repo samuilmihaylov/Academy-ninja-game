@@ -2,6 +2,6 @@
 {
     internal interface ICourse : IUnit
     {
-        int Points { get; }
+        int BonusPoints { get; }
     }
 }
