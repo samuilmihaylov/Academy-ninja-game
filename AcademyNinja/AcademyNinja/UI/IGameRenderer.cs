@@ -4,6 +4,6 @@
 
     internal interface IGameRenderer
     {
-        void RenderGameContext(IGameContext gameContext);
+        void DrawGameContext(IGameContext gameContext);
     }
 }

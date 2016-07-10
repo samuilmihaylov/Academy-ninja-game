@@ -43,9 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Helpers\ConsoleHelper.cs" />
     <Compile Include="Common\CourseType.cs" />
     <Compile Include="Common\KeyPressEventArgs.cs" />
     <Compile Include="Common\KeyType.cs" />
+    <Compile Include="Engine\GameContext.cs" />
     <Compile Include="Engine\Contracts\IGameContext.cs" />
     <Compile Include="Engine\GameEngine.cs" />
     <Compile Include="CommandProvider\ConsoleCommandProvider.cs" />
