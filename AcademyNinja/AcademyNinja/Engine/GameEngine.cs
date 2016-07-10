@@ -4,13 +4,18 @@
     using AcademyNinja.Engine.Contracts;
     using AcademyNinja.Factories;
     using AcademyNinja.GameObjects;
+    using AcademyNinja.GameObjects.Contracts;
+    using AcademyNinja.Common;
 
     internal class GameEngine : IGameEngine
     {
+        private const int CoursesInRow = 5;
+        private const int CoursesInColumn = 4;
+
         private IGameRenderer renderer;
         private ICommandProvider commandProvider;
         private ICourseFactory courseFactory;
-        //private ICourse[][] courses;
+        private ICourse[][] courses;
         private INinja academyNinja;
         private IGameContext context;
 
@@ -20,6 +25,7 @@
             this.commandProvider = commandProvider;
             this.courseFactory = courseFactory;
             this.context = new GameContext();
+            this.courses = new ICourse[CoursesInRow][];
         }
 
         public GameEngine(IGameRenderer gameRenderer, ICommandProvider commandProvider)
@@ -29,26 +35,45 @@
 
         public void InitializeGame()
         {
-            this.academyNinja = new Ninja(null, 1, 1);
-            this.context.Player = academyNinja;
-            this.renderer.DrawGameContext(this.context);
-            // ninja init
-            // courses array
+            // Creating game objects.
+            //this.academyNinja = new Ninja(null, 1, 1);
+            this.InitCoursesCollecion();
+
+            this.context.Courses = this.courses;
         }
 
         public void StartGame()
         {
-            while (!this.IsGameFinished())
-            {
-                //this.renderer.DrawGameContext(null);
-                this.commandProvider.ListenForKeyPress();
-                // Appy command
-            }
+            this.renderer.DrawGameContext(this.context);
+
+            //while (!this.IsGameFinished())
+            //{
+            //    //this.renderer.DrawGameContext(null);
+            //    this.commandProvider.ListenForKeyPress();
+            //    // Apply command
+            //}
         }
 
         private bool IsGameFinished()
         {
             return false;
+        }
+
+        private void InitCoursesCollecion()
+        {
+            for (int rowIndex = 0; rowIndex < CoursesInRow; rowIndex++)
+            {
+                this.courses[rowIndex] = new ICourse[CoursesInColumn];
+                for (int colIndex = 0; colIndex < CoursesInColumn; colIndex++)
+                {
+                    var nextCourse = this.courseFactory.CreateCourse(CourseType.HTML);
+                    int x = 2 + (rowIndex * Constants.CourseDrawingHeigth);
+                    int y = 10 + (colIndex * Constants.CourseDrawingWidth);
+                    var position = new Position(x, y);
+                    nextCourse.Bound.Position = position;
+                    this.courses[rowIndex][colIndex] = nextCourse;
+                }
+            }
         }
     }
 }

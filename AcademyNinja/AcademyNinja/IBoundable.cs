@@ -2,6 +2,6 @@
 {
     internal interface IBoundable
     {
-        IBound Bound { get; }
+        IBound Bound { get; set; }
     }
 }

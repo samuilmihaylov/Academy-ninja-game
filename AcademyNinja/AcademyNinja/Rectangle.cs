@@ -17,6 +17,6 @@
 
         public int Width { get; private set; }
 
-        public Position Position { get; private set; }
+        public Position Position { get; set; }
     }
 }

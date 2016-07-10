@@ -4,7 +4,7 @@
 
     internal interface IGameContext
     {
-        ICollection<IBoundable[]> Courses { get; set; }
+        IEnumerable<IEnumerable<IBoundable>> Courses { get; set; }
 
         IBoundable Player { get; set; }
 

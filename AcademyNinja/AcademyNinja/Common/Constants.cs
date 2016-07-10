@@ -2,7 +2,7 @@
 {
     internal static class Constants
     {
-        public static int CourseDrawingWidth = 11;
-        public static int CourseDrawingHeigth = 3;
+        public const int CourseDrawingWidth = 11;
+        public const int CourseDrawingHeigth = 3;
     }
 }

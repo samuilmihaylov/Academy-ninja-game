@@ -4,7 +4,7 @@
 
     internal class GameContext : IGameContext
     {
-        public ICollection<IBoundable[]> Courses { get; set; }
+        public IEnumerable<IEnumerable<IBoundable>> Courses { get; set; }
 
         public IBoundable Player { get; set; }
 

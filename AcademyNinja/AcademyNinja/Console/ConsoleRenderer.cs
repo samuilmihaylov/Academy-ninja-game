@@ -14,26 +14,34 @@
 
         public ConsoleRenderer()
         {
-            Console.SetWindowSize(ConsoleWidth, ConsoleHeigth);
+            //Console.SetWindowSize(ConsoleWidth, ConsoleHeigth);
         }
 
         public void DrawGameContext(IGameContext gameContext)
         {
-            var player = gameContext.Player;
-            this.DrawSingleUnit(player);
+            this.DrawUnits(gameContext.Courses);
         }
 
-        private void DrawUnits(ICollection<IBoundable> courses)
+        private void DrawUnits(IEnumerable<IEnumerable<IBoundable>> courses)
         {
-            throw new NotImplementedException();
+            foreach (var row in courses)
+            {
+                foreach (var item in row)
+                {
+                    this.DrawSingleUnit(item);
+                }
+            }
         }
 
         private void DrawSingleUnit(IBoundable unit)
         {
             Type unitType = unit.GetType();
             string[][] unitRepresentation = ConsoleHelper.GetFigureDrawing(unitType);
+            int xPosition = unit.Bound.Position.X;
+            int yPosition = unit.Bound.Position.Y;
             foreach (var row in unitRepresentation)
             {
+                Console.SetCursorPosition(xPosition, yPosition++);
                 foreach (var symbol in row)
                 {
                     Console.Write(symbol);

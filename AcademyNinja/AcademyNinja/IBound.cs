@@ -6,6 +6,6 @@
 
         int Height { get; }
 
-        Position Position { get; }
+        Position Position { get; set; }
     }
 }
