@@ -60,6 +60,7 @@
     <Compile Include="GameObjects\Courses\JavaScriptCourse.cs" />
     <Compile Include="GameObjects\Courses\SpecialCourse.cs" />
     <Compile Include="Rectangle.cs" />
+    <Compile Include="UI\ConsoleRenderer.cs" />
     <Compile Include="UI\IGameRenderer.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="IBound.cs" />
