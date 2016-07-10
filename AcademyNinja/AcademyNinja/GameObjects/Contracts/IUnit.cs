@@ -1,6 +1,6 @@
 ﻿namespace AcademyNinja.GameObjects.Contracts
 {
-    internal interface IUnit
+    internal interface IUnit : IGameObject
     {
         int Health { get; set; }
 

@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    internal interface ISpecialCourse
+    internal interface ISpecialCourse : ICourse
     {
         IList<ISkill> Skills { get; set; }
     }
