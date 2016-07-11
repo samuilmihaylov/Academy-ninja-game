@@ -1,10 +1,10 @@
 ﻿namespace AcademyNinja.Engine
 {
+    using System.Collections.Generic;
+
     using AcademyNinja.Contracts;
-    using AcademyNinja.Engine.Contracts;
     using AcademyNinja.Factories;
     using AcademyNinja.GameObjects;
-    using AcademyNinja.GameObjects.Contracts;
     using AcademyNinja.Common;
 
     internal class GameEngine : IGameEngine
@@ -15,7 +15,7 @@
         private IGameRenderer renderer;
         private ICommandProvider commandProvider;
         private ICourseFactory courseFactory;
-        private ICourse[][] courses;
+        private IList<IList<ICourse>> courses;
         private INinja academyNinja;
         private IGameContext context;
 
@@ -66,9 +66,9 @@
                 this.courses[rowIndex] = new ICourse[CoursesInColumn];
                 for (int colIndex = 0; colIndex < CoursesInColumn; colIndex++)
                 {
-                    var nextCourse = this.courseFactory.CreateCourse(CourseType.HTML);
-                    int x = (colIndex * Constants.CourseDrawingWidth) + colIndex * 5;
-                    int y = (rowIndex * Constants.CourseDrawingHeigth) + rowIndex;
+                    var nextCourse = this.courseFactory.CreateCourse(CourseType.JavaScript);
+                    int x = (colIndex * Constants.CourseDrawingWidth) + (colIndex * 5) + 5;
+                    int y = (rowIndex * Constants.CourseDrawingHeigth) + rowIndex + 1;
                     var position = new Position(x, y);
                     nextCourse.Bound.Position = position;
                     this.courses[rowIndex][colIndex] = nextCourse;

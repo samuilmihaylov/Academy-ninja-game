@@ -1,4 +1,4 @@
-﻿namespace AcademyNinja.Engine
+﻿namespace AcademyNinja.Contracts
 {
     internal interface IGameEngine
     {

@@ -1,4 +1,4 @@
-﻿namespace AcademyNinja.GameObjects.Contracts
+﻿namespace AcademyNinja.Contracts
 {
     internal interface ICourse : IUnit
     {

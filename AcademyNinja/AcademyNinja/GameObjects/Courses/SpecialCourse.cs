@@ -1,9 +1,8 @@
 ﻿namespace AcademyNinja.GameObjects.Courses
 {
-    using System;
     using System.Collections.Generic;
 
-    using AcademyNinja.GameObjects.Contracts;
+    using AcademyNinja.Contracts;
 
     internal class SpecialCourse : Course, ISpecialCourse
     {

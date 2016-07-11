@@ -1,5 +1,7 @@
 ﻿namespace AcademyNinja.GameObjects
 {
+    using AcademyNinja.Contracts;
+
     internal class Ninja : Unit, INinja
     {
         private const int MinimumLives = 0;

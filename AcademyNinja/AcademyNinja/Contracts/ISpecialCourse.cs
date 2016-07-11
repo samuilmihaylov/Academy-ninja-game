@@ -1,4 +1,4 @@
-﻿namespace AcademyNinja.GameObjects.Contracts
+﻿namespace AcademyNinja.Contracts
 {
     using System.Collections.Generic;
 

@@ -1,6 +1,6 @@
 ﻿namespace AcademyNinja.GameObjects
 {
-    using Contracts;
+    using AcademyNinja.Contracts;
 
     internal class Unit : GameObject, IUnit
     {

@@ -1,6 +1,6 @@
 ﻿namespace AcademyNinja.GameObjects
 {
-    using AcademyNinja.GameObjects.Contracts;
+    using AcademyNinja.Contracts;
 
     internal class GameObject : IGameObject, IBoundable
     {

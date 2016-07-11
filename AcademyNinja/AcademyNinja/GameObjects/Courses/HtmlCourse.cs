@@ -1,6 +1,6 @@
 ﻿namespace AcademyNinja.GameObjects.Courses
 {
-    using AcademyNinja.GameObjects.Contracts;
+    using AcademyNinja.Contracts;
 
     internal class HtmlCourse : Course, ICourse
     {

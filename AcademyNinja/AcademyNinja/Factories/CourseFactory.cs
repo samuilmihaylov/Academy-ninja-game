@@ -2,9 +2,9 @@
 {
     using System;
 
-    using AcademyNinja.GameObjects.Contracts;
     using Common;
     using GameObjects.Courses;
+    using Contracts;
 
     internal class CourseFactory : ICourseFactory
     {

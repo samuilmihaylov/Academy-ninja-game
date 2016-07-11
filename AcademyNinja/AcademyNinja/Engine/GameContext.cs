@@ -1,6 +1,8 @@
-﻿namespace AcademyNinja.Engine.Contracts
+﻿namespace AcademyNinja.Engine
 {
     using System.Collections.Generic;
+
+    using Contracts;
 
     internal class GameContext : IGameContext
     {

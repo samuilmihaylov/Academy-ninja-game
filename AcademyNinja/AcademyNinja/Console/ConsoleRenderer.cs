@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
 
-    using AcademyNinja.Engine.Contracts;
     using Common.ConsoleHelpers;
     using Contracts;
 

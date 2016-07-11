@@ -1,6 +1,6 @@
 ﻿namespace AcademyNinja.Contracts
 {
-    using AcademyNinja.Engine.Contracts;
+    using AcademyNinja.Contracts;
 
     internal interface IGameRenderer
     {

@@ -1,7 +1,5 @@
-﻿namespace AcademyNinja.GameObjects
+﻿namespace AcademyNinja.Contracts
 {
-    using AcademyNinja.GameObjects.Contracts;
-
     internal interface INinja : IUnit
     {
         int Lives { get; set; }

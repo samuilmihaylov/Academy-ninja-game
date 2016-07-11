@@ -1,5 +1,7 @@
 ﻿namespace AcademyNinja.GameObjects.Gifts
 {
+    using AcademyNinja.Contracts;
+
     internal class BonusLifeGift : IGift
     {
         private const byte BonusLife = 1;

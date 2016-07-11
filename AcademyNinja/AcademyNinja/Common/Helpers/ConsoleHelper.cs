@@ -12,15 +12,17 @@
             string[][] figureDrawing = null;
             if (figureType == typeof(CSharpCourse))
             {
-                figureDrawing = new[]{
-                    new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", " ", "#" },
-                    new[] { "|", " ", " "," ", " ", "\\", " "," ","#", "#", "#" },
-                    new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", " ", "#" }
+                figureDrawing = new[]
+                {
+                    new[] { "#", "#", "#", " ", "#", "#", "#"," ", "#", " ", "#" },
+                    new[] { "|", " ", " ", " ", " ", "\\", " "," ","#", "#", "#" },
+                    new[] { "#", "#", "#", " ", "#", "#", "#", " ", "#", " ", "#" }
                 };
             }
             else if (figureType == typeof(CssCourse))
             {
-                figureDrawing = new[]{
+                figureDrawing = new[]
+                {
                     new[] { "#", "#", "#"," ", "#", "#", "#"," ", "#", "#", "#" },
                     new[] { "|", " ", " "," ", " ", "\\", " "," "," ", "\\", " " },
                     new[] { "#", "#", "#"," ", "#", "#", "#", " ", "#", "#", "#" }
@@ -28,7 +30,8 @@
             }
             else if (figureType == typeof(HtmlCourse))
             {
-                figureDrawing = new[]{
+                figureDrawing = new[]
+                {
                     new[] { "#", " ", "#", " ", "#", "#", "#", " ", "#", "  ", "#" },
                     new[] { "#", "#", "#", " ", " ", "#", " ", " ", "#", "\\/", "#" },
                     new[] { "#", " ", "#", " ", " ", "#", " ", " ", "#", " ", " #" }
@@ -36,7 +39,8 @@
             }
             else if (figureType == typeof(JavaScriptCourse))
             {
-                figureDrawing = new[] {
+                figureDrawing = new[]
+                {
                     new[] { "#", "#", "#", " ", "#", "#", "#", " ", "#", "#", "#" },
                     new[] { " ", " ", "#", " ", " ", "\\", " ", " ", "|", " ", " " },
                     new[] { " ", "#", "#", " ", "#", "#", "#", " ", "#", "#", "#" }
@@ -44,7 +48,8 @@
             }
             else if (figureType == typeof(SpecialCourse))
             {
-                figureDrawing = new[]{
+                figureDrawing = new[]
+                {
                     new[] { "#", "#", "#", " ", "#", "#", "#", " ", "#", "#", "#" },
                     new[] { "#", " ", "#", " ", "#", " ", "#", " ", "#", "#", "#" },
                     new[] { "#", "#", "#", " ", "#", "#", "#", " ", "#", " ", " " }
@@ -52,13 +57,8 @@
             }
             else if (figureType == typeof(Ninja))
             {
-                figureDrawing = new[]{
-                    new[] { " 0" },
-                    new[] { "/|\\/" },
-                    new[] { "/ \\" }
-                };
-
-                figureDrawing = new[]{
+                figureDrawing = new[]
+                {
                     new[] { " ", "0" },
                     new[] { "/|", "\\/" },
                     new[] { "/ \\" }

@@ -1,4 +1,4 @@
-﻿namespace AcademyNinja.Engine.Contracts
+﻿namespace AcademyNinja.Contracts
 {
     using System.Collections.Generic;
 

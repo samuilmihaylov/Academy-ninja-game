@@ -1,6 +1,5 @@
-﻿namespace AcademyNinja.Factories
+﻿namespace AcademyNinja.Contracts
 {
-    using AcademyNinja.GameObjects.Contracts;
     using Common;
 
     internal interface ICourseFactory
