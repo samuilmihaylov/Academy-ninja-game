@@ -10,7 +10,7 @@
     internal class GameEngine : IGameEngine
     {
         private const int CoursesInRow = 5;
-        private const int CoursesInColumn = 4;
+        private const int CoursesInColumn = 5;
 
         private IGameRenderer renderer;
         private ICommandProvider commandProvider;
@@ -67,8 +67,8 @@
                 for (int colIndex = 0; colIndex < CoursesInColumn; colIndex++)
                 {
                     var nextCourse = this.courseFactory.CreateCourse(CourseType.HTML);
-                    int x = 2 + (rowIndex * Constants.CourseDrawingHeigth);
-                    int y = 10 + (colIndex * Constants.CourseDrawingWidth);
+                    int x = (colIndex * Constants.CourseDrawingWidth) + colIndex * 5;
+                    int y = (rowIndex * Constants.CourseDrawingHeigth) + rowIndex;
                     var position = new Position(x, y);
                     nextCourse.Bound.Position = position;
                     this.courses[rowIndex][colIndex] = nextCourse;

@@ -14,7 +14,7 @@
 
         public ConsoleRenderer()
         {
-            //Console.SetWindowSize(ConsoleWidth, ConsoleHeigth);
+            Console.SetWindowSize(ConsoleWidth, ConsoleHeigth);
         }
 
         public void DrawGameContext(IGameContext gameContext)
@@ -36,7 +36,7 @@
         private void DrawSingleUnit(IBoundable unit)
         {
             Type unitType = unit.GetType();
-            string[][] unitRepresentation = ConsoleHelper.GetFigureDrawing(unitType);
+            var unitRepresentation = ConsoleHelper.GetFigureDrawing(unitType);
             int xPosition = unit.Bound.Position.X;
             int yPosition = unit.Bound.Position.Y;
             foreach (var row in unitRepresentation)
