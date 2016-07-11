@@ -2,7 +2,16 @@
 
 **Team "Quan Chi"**
 
- Markup : * Team members
-           * Stoqn Uzunov
-           * Samuil Mihaylov
+* Team members
+   * suzunov
+   * Samuil_Mihaylov
 
+**Purpose:**
+
+Our game is something like this one: [Link](http://www.pacxon4u.com/space-invaders/), but our story starts with a brave ninja.
+You are a **Telerik ninja** and your task is to *take down all of the evil courses in game* - (HTML, CSS, JavaScript and CSharp).
+As u are ninja, *you can move and throw shuricanes*, but these mad courses are diffcult to get hit because they *are moving and shooting you*.
+You have three lives, but there's also **Speacial course** who can drop you extra life, or make you stronger when you kill him.
+
+**Link**
+[Link to Git repository](https://github.com/sguzunov/Academy-ninja-game)
