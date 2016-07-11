@@ -5,20 +5,22 @@
 
     using Common.ConsoleHelpers;
     using Contracts;
+    using Common;
 
     internal class ConsoleRenderer : IGameRenderer
     {
-        private const int ConsoleWidth = 150;
-        private const int ConsoleHeigth = 40;
-
         public ConsoleRenderer()
         {
-            Console.SetWindowSize(ConsoleWidth, ConsoleHeigth);
+            Console.SetWindowSize(Constants.WindowWidth, Constants.WindowHeigth);
+            Console.CursorVisible = false;
+            Console.BufferHeight = Console.WindowHeight;
+            Console.BufferWidth = Console.WindowWidth;
         }
 
         public void DrawGameContext(IGameContext gameContext)
         {
             this.DrawUnits(gameContext.Courses);
+            this.DrawSingleUnit(gameContext.Player);
         }
 
         private void DrawUnits(IEnumerable<IEnumerable<IBoundable>> courses)

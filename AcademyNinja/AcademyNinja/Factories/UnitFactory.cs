@@ -3,10 +3,11 @@
     using System;
 
     using Common;
-    using GameObjects.Courses;
     using Contracts;
+    using GameObjects;
+    using GameObjects.Courses;
 
-    internal class CourseFactory : ICourseFactory
+    internal class UnitFactory : IUnitFactory
     {
         private const string InvalidCourseErrorMesssage = "Course {0} does not exists!";
 
@@ -26,6 +27,13 @@
                 default:
                     throw new ArgumentException(string.Format(InvalidCourseErrorMesssage, type));
             }
+        }
+
+        public INinja CreateNinja()
+        {
+            var bounds = new Rectangle(Constants.NinjaDrawingWidth, Constants.NinjaDrawingHeigth);
+            int health = 100;
+            return new Ninja(bounds, health);
         }
     }
 }

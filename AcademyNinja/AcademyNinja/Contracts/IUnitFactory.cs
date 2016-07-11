@@ -2,8 +2,10 @@
 {
     using Common;
 
-    internal interface ICourseFactory
+    internal interface IUnitFactory
     {
         ICourse CreateCourse(CourseType type);
+
+        INinja CreateNinja();
     }
 }

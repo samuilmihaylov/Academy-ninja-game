@@ -49,6 +49,7 @@
     <Compile Include="Common\Enums\CourseType.cs" />
     <Compile Include="Common\KeyPressEventArgs.cs" />
     <Compile Include="Common\Enums\KeyType.cs" />
+    <Compile Include="Common\Utils.cs" />
     <Compile Include="Common\Validator\Validator.cs" />
     <Compile Include="Engine\GameContext.cs" />
     <Compile Include="Contracts\IGameContext.cs" />
@@ -56,8 +57,8 @@
     <Compile Include="Console\ConsoleCommandProvider.cs" />
     <Compile Include="Contracts\ICommandProvider.cs" />
     <Compile Include="Contracts\IGameEngine.cs" />
-    <Compile Include="Factories\CourseFactory.cs" />
-    <Compile Include="Contracts\ICourseFactory.cs" />
+    <Compile Include="Factories\UnitFactory.cs" />
+    <Compile Include="Contracts\IUnitFactory.cs" />
     <Compile Include="Contracts\ISpecialCourse.cs" />
     <Compile Include="GameObjects\Courses\CSharpCourse.cs" />
     <Compile Include="GameObjects\Courses\CssCourse.cs" />

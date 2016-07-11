@@ -1,11 +1,9 @@
 ﻿namespace AcademyNinja.Engine
 {
-    using System.Collections.Generic;
-
+    using AcademyNinja.Common;
     using AcademyNinja.Contracts;
     using AcademyNinja.Factories;
-    using AcademyNinja.GameObjects;
-    using AcademyNinja.Common;
+    using System.Collections.Generic;
 
     internal class GameEngine : IGameEngine
     {
@@ -14,31 +12,34 @@
 
         private IGameRenderer renderer;
         private ICommandProvider commandProvider;
-        private ICourseFactory courseFactory;
+        private IUnitFactory unitsFactory;
         private IList<IList<ICourse>> courses;
         private INinja academyNinja;
         private IGameContext context;
 
-        public GameEngine(IGameRenderer gameRenderer, ICommandProvider commandProvider, ICourseFactory courseFactory)
+        public GameEngine(IGameRenderer gameRenderer, ICommandProvider commandProvider, IUnitFactory unitsFactory)
         {
             this.renderer = gameRenderer;
             this.commandProvider = commandProvider;
-            this.courseFactory = courseFactory;
+            this.unitsFactory = unitsFactory;
             this.context = new GameContext();
             this.courses = new ICourse[CoursesInRow][];
         }
 
         public GameEngine(IGameRenderer gameRenderer, ICommandProvider commandProvider)
-            : this(gameRenderer, commandProvider, new CourseFactory())
+            : this(gameRenderer, commandProvider, new UnitFactory())
         {
         }
 
         public void InitializeGame()
         {
-            // Creating game objects.
-            //this.academyNinja = new Ninja(null, 1, 1);
             this.InitCoursesCollecion();
+            this.academyNinja = this.unitsFactory.CreateNinja();
+            this.academyNinja.Bound.Position = new Position(
+                ((Constants.WindowWidth - Constants.NinjaDrawingWidth) / 2),
+                (Constants.WindowHeigth - Constants.NinjaDrawingHeigth));
 
+            this.context.Player = this.academyNinja;
             this.context.Courses = this.courses;
         }
 
@@ -66,9 +67,11 @@
                 this.courses[rowIndex] = new ICourse[CoursesInColumn];
                 for (int colIndex = 0; colIndex < CoursesInColumn; colIndex++)
                 {
-                    var nextCourse = this.courseFactory.CreateCourse(CourseType.JavaScript);
-                    int x = (colIndex * Constants.CourseDrawingWidth) + (colIndex * 5) + 5;
-                    int y = (rowIndex * Constants.CourseDrawingHeigth) + rowIndex + 1;
+                    var nextCourse = this.unitsFactory.CreateCourse(CourseType.CSharp);
+                    int offsetX = (colIndex * 5) + 5;
+                    int offsetY = rowIndex + 1;
+                    int x = (colIndex * Constants.CourseDrawingWidth) + offsetX;
+                    int y = (rowIndex * Constants.CourseDrawingHeigth) + offsetY;
                     var position = new Position(x, y);
                     nextCourse.Bound.Position = position;
                     this.courses[rowIndex][colIndex] = nextCourse;
