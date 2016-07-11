@@ -49,6 +49,7 @@
     <Compile Include="Common\Enums\CourseType.cs" />
     <Compile Include="Common\KeyPressEventArgs.cs" />
     <Compile Include="Common\Enums\KeyType.cs" />
+    <Compile Include="Common\Validator\Validator.cs" />
     <Compile Include="Engine\GameContext.cs" />
     <Compile Include="Contracts\IGameContext.cs" />
     <Compile Include="Engine\GameEngine.cs" />

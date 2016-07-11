@@ -1,7 +1,14 @@
-﻿namespace AcademyNinja
+﻿using AcademyNinja.Common;
+using AcademyNinja.Common.Validator;
+
+namespace AcademyNinja
 {
     internal class Rectangle : IBound
     {
+        private int height;
+        private int width;
+        private Position position;
+
         public Rectangle(int width, int heigth)
         {
             this.Width = width;
@@ -13,10 +20,44 @@
             this.Position = position;
         }
 
-        public int Height { get; private set; }
+        public int Height
+        {
+            get
+            {
+                return this.height;
+            }
+            private set
+            {
+                Validator.ValidateIfZero(value, string.Format(Constants.ValueCannotBeZero, "Height"));
 
-        public int Width { get; private set; }
+                this.height = value;
+            }
+        }
 
-        public Position Position { get; set; }
+        public int Width
+        {
+            get
+            {
+                return this.width;
+            }
+            private set
+            {
+                Validator.ValidateIfZero(value, string.Format(Constants.ValueCannotBeZero, "Width"));
+
+                this.width = value;
+            }
+        }
+
+        public Position Position
+        {
+            get
+            {
+                return this.position;
+            }
+            set
+            {
+                this.position = value;
+            }
+        }
     }
 }

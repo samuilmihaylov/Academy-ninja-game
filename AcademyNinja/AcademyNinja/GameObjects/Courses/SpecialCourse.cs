@@ -3,6 +3,8 @@
     using System.Collections.Generic;
 
     using AcademyNinja.Contracts;
+    using Common.Validator;
+    using Common;
 
     internal class SpecialCourse : Course, ISpecialCourse
     {
@@ -23,13 +25,13 @@
 
         public void AddGift(IGift gift)
         {
-            // TODO : Validation
+            Validator.ValidateNull(gift, string.Format(Constants.ObjectCannotBeNull, "Gift"));
             this.gifts.Add(gift);
         }
 
         public void AddGifts(IEnumerable<IGift> gifts)
         {
-            // TODO : Validation
+            Validator.ValidateNull(gifts, string.Format(Constants.ObjectCannotBeNull, "Gifts"));
             this.gifts.AddRange(gifts);
         }
     }
